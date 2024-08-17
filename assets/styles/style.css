@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.884);
+
+
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(32, 166, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(57, 159, 226);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+
+    & .buttons {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .score {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.image {
+    width: 5rem;
+    height: 5rem;
+    background-color: #000000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 3px solid rgb(32, 166, 255);
+
+
+    img {
+        width: 50px;
+        height: 50px;
+
+    }
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url("./../images/backgroung.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px)
+}
+#playAgain{
+    display: none;
+}
+
+.grid-three--cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    & .computer {
+        display: grid;
+        gap: 30px;
+    }
+
+    & .player {
+        display: grid;
+        gap: 30px;
+    }
+
+    & .result {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.6rem;
+    }
+}
+
+@media (width <=700px) {
+    html {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .grid-three--cols {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .container {
+        & .buttons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    button {
+        width: 200px;
+    }
+
+}
+
+@media (width <=250px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
