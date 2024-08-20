@@ -21,8 +21,6 @@ html {
 h1 {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.884);
-
-
 }
 
 button {
@@ -73,14 +71,11 @@ button {
     place-items: center;
     border: 3px solid rgb(32, 166, 255);
 
-
     img {
         width: 50px;
         height: 50px;
-
     }
 }
-
 
 body {
     width: 100vw;
@@ -121,7 +116,7 @@ body {
 
 @media (width <=700px) {
     html {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     button {
