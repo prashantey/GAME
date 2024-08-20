@@ -47,6 +47,8 @@ button {
     flex-direction: column;
     gap: 40px;
     padding: 30px;
+    background-color: #8f8b8b62;
+    border-radius: 10px;
 
     & .buttons {
         display: flex;
